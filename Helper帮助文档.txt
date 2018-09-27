@@ -1,0 +1,10 @@
+created by 王茂波
+1.本Demo实现了长按录音及播放音频功能，并把录音资源格式转化为mp3(基于开源库LAME)
+2.本Demo实现了把mp3文件上传到服务器（基于Retrofit2），支持再次下载播放，缓存功能
+3.对于权限的管理，本Demo用的第三方库，即设备设施项目中用到的：https://github.com/yanzhenjie/AndPermission
+4.本Demo内部封装了长按录音控件，解决了与列表滚动View的冲突
+5.用法参考MainActivity,详细介绍看知识库文章《android仿微信UI长按控件录音，转化为MP3，支持上传，播放等功能》
+核心类
+	录音类：RecorderManager
+	播音类：MediaManager
+	录音控件：LongPressRecordView

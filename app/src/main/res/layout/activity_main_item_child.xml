@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:background="@mipmap/record_bg">
+
+        <ImageView
+            android:id="@+id/iv_anim"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/anim_common_record"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/rl_record"
+        android:gravity="center_vertical"
+        android:text="10s"
+        android:textSize="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:src="@mipmap/record_delete"
+        />
+</RelativeLayout>
